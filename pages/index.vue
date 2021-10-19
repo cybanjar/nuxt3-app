@@ -1,3 +1,5 @@
 <template>
-  <h3>Index Page</h3>
+  <div class="bg-yellow">
+    <p>Index Page</p>
+  </div>
 </template>

@@ -1,0 +1,29 @@
+$bg-darker: #000;
+$bg-dark: #111;
+$bg-yellow: #FCF318;
+
+$text-yellow: #FCF318;
+$text-white: #FFF;
+$text-grey-4: #BDBDBD;
+$text-grey-5: #E0E0E0;
+$text-grey-6: #F2F2F2;
+
+.bg-darker {
+    background-color: $bg-darker;
+}
+
+.bg-dark {
+    background-color: $bg-dark;
+}
+
+.bg-yellow {
+    background-color: $bg-yellow;
+}
+
+.text-yellow {
+    color: $text-yellow;
+}
+
+.text-grey-4 {
+    color: $text-grey-4;
+}
