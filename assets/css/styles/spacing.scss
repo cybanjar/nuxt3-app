@@ -26,6 +26,26 @@
     margin: 0 16px;
 }
 
+.mr-sm {
+    margin-right: 8px;
+}
+
+.mr-md {
+    margin-right: 16px;
+}
+
+.mr-lg {
+    margin-right: 24px;
+}
+
+.mr-xl {
+    margin-right: 46px;
+}
+
+.ma-md {
+    margin: 16px;
+}
+
 .py-md {
     padding: 16px 0;
 }
@@ -46,6 +66,14 @@
     padding-left: 24px;
 }
 
+.pt-xs {
+    padding-top: 4px;
+}
+
 .pt-sm {
     padding-top: 8px;
+}
+
+.pb-md {
+    padding-bottom: 16px;
 }

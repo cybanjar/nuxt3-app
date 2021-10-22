@@ -24,22 +24,14 @@
       <li>Travel</li>
     </ul>
     <hr style="border: 1px solid black" />
-    <ul>
-      <li>Suara.com</li>
-      <li>Matamata.com</li>
-      <li>Sukabumiupdate.com</li>
-      <li>Jabarnews.com</li>
-      <li>Hitekno.com</li>
-      <li>Kabarmedan.com</li>
-      <li>Beritajatim.com</li>
-      <li>Batamnews.com</li>
-      <li>Bolatimes.com</li>
-      <li>Suarakalbar.com</li>
-      <li>Riauonline.com</li>
-      <li>Terasmaluku.com</li>
-      <li>Ayobandung.com</li>
-      <li>Solopos.com</li>
-      <li>Yoursay.com</li>
+    <ul v-for="(item, index) in linkIcon" :key="index">
+      <li class="icons">
+        <img
+          :src="item['img']"
+          style="width: 24px; height: auto; margin: 0 4px 0 0"
+        />
+        <span>{{ item['label'] }}</span>
+      </li>
     </ul>
     <hr style="border: 1px solid #302f2f" />
     <div class="follow-us">
@@ -69,3 +61,77 @@
     </div>
   </div>
 </template>
+
+<script setup>
+  const linkIcon = [
+    {
+      img: '../assets/images/icons/Icon_suara.png',
+      label: 'Suara.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_mata2.png',
+      label: 'Matamata.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_sukabumi.png',
+      label: 'Sukabumiupdate.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_jabar.png',
+      label: 'Jabarnews.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_hitekno.png',
+      label: 'Hitekno.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_medan.png',
+      label: 'Kabarmedan.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_jatim.png',
+      label: 'Beritajatim.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_batam.png',
+      label: 'Batamnews.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_bolatimes.png',
+      label: 'Bolatimes.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_suara.png',
+      label: 'Suarakalbar.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_riau.png',
+      label: 'Riauonline.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_maluku.png',
+      label: 'Terasmaluku.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_ayobandung.png',
+      label: 'Ayobandung.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_solopos.png',
+      label: 'Solopos.com'
+    },
+    {
+      img: '../assets/images/icons/Icon_say.png',
+      label: 'Yoursay.com'
+    },
+  ] 
+</script>
+
+<style lang="scss">
+ul {
+  li.icons {
+    display: flex;
+    justify-items: center;
+  }
+}
+</style>
